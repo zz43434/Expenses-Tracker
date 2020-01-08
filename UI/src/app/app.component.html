@@ -1,0 +1,22 @@
+<div>
+<h1>Expenses Tracker</h1>
+</div>
+
+<div class="transactions">
+<table>
+  <thead>
+    <th>Amount</th>
+    <th>Type</th>
+    <th>Vendor</th>
+    <th>Category</th>
+    <th>Date</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of transactions">
+      <td>{{t.Amount}}</td>
+      <td>{{t.Category}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
